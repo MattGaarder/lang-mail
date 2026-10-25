@@ -1,0 +1,9 @@
+# API keys and local configuration
+.env
+.env.*
+
+# Dependencies and generated files
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
