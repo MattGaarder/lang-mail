@@ -8,12 +8,12 @@ import {
   MemorySaver,
   interrupt,
 } from '@langchain/langgraph';
-import { ChatOpenAI } from '@langchain/openai';
+import { ChatGoogleGenerativeAI } from '@langchain/google-genai';
 import { generateId } from '../utils.js';
 import z from 'zod';
 
-const llm = new ChatOpenAI({
-  model: 'gpt-5-nano',
+const llm = new ChatGoogleGenerativeAI({
+  model: 'gemini-2.5-flash'
 });
 
 export const EmailClassificationSchema = z.object({

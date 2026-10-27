@@ -32,6 +32,8 @@ function nodeA(state: State): Command {
   });
 }
 
+
+
 function nodeB(state: State): Partial<State> {
   return { nlist: ['B'] };
 }
